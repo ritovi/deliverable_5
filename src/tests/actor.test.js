@@ -1,4 +1,4 @@
-require('../models'); // Asegúrate de que tu archivo de modelos esté correctamente importado
+require('../models'); 
 const request = require("supertest");
 const app = require("../app");
 

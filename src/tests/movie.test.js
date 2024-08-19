@@ -42,7 +42,14 @@ test("GET '/movies' should return a statusCode 200", async () => {
   expect(res.body[0].releaseYear).toBeDefined()
 
   expect(res.body[0].actors).toBeDefined();
-  expect(res.body[0].actors).toHaveLength(0); // Assuming no actors are associated yet
+  expect(res.body[0].actors).toHaveLength(0);
+
+  expect(res.body[0].directors).toBeDefined();
+  expect(res.body[0].directors).toHaveLength(0);
+
+  expect(res.body[0].genres).toBeDefined();
+  expect(res.body[0].genres).toHaveLength(0);
+  
 });
 
 
